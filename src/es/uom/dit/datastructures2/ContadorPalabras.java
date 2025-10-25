@@ -19,7 +19,7 @@ public class ContadorPalabras {
 
 	c) Cuenta cuántas veces aparece cada palabra.
 
-	d) Muestra los resultados ordenados alfabéticamente por palabra
+	d) Muestra los resultados (frecuencia de las palabras)
 	 */
 	public static void main(String[] args) {
 		// a) Usa un Map<String, Integer>.
@@ -28,8 +28,9 @@ public class ContadorPalabras {
 		System.out.println("Escriba un frase:");
 		Scanner sc = new Scanner(System.in);
 		String frase = sc.nextLine();
+		sc.close();
 		// c) Cuenta cuántas veces aparece cada palabra.
-		String[] listaPalabras = frase.split("\\s+");
+		String[] listaPalabras = frase.split("\\s");
 		
 		for (String palabra : listaPalabras) {
 			// Cambiamos mayúsculas a minúsculas:
@@ -43,10 +44,11 @@ public class ContadorPalabras {
 				palabras.put(palabra, 1);
 			}
 		}
-		Map<String, Integer> ordenado = new HashMap<>(palabras);
+		// d) Muestra los resultados (frecuencia de las palabras) 
+		Map<String, Integer> mapa = new HashMap<>(palabras);
 		System.out.println("Frecuencia de palabras:");
-		for (Entry<String, Integer> entry : ordenado.entrySet()) {
-		    System.out.println(entry.getKey() + ": " + entry.getValue());
+		for (Entry<String, Integer> entrada : mapa.entrySet()) {
+		    System.out.println(entrada.getKey() + ": " + entrada.getValue());
 		}
 		
 	}
