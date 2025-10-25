@@ -18,8 +18,8 @@ public class ListaDoblementeEnlazada {
 	public static void main(String[] args) {
 		// a)  Crea un LinkedList<String> con los nombres de los días de la semana.
 		List<String> nombres = new LinkedList<String>();
-		nombres.add("Martes");
 		nombres.add("Lunes");
+		nombres.add("Martes");
 		nombres.add("Miércoles");
 		nombres.add("Jueves");
 		nombres.add("Viernes");
