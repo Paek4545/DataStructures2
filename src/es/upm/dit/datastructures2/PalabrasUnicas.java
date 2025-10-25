@@ -1,4 +1,4 @@
-package es.uom.dit.datastructures2;
+package es.upm.dit.datastructures2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,10 +1,9 @@
-package es.uom.dit.datastructures2;
+package es.upm.dit.datastructures2;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.TreeMap;
 
 public class ContadorPalabras {
 	/*
