@@ -17,7 +17,7 @@ public class ColaFIFO {
 	
 	c) Atiende (elimina) al cliente al frente.
 
-	d)Muestra en cada paso la cola actual.
+	d) Muestra en cada paso la cola actual.
 
 	e) Cuando la cola esté vacía, muestra un mensaje “No hay más clientes”
 	 */
@@ -39,10 +39,12 @@ public class ColaFIFO {
 		// c) Atiende (elimina) al cliente al frente.
 		while(!cola.isEmpty()) {
 			String atendido = cola.remove(0); // Eliminamos al primer cliente de la cola
-			System.out.println("Se ha antendido a: " + atendido);
+			System.out.println("Se ha atendido a: " + atendido);
+		// d) Muestra en cada paso la cola actual.
 			System.out.println("Clientes que quedan en la cola: " + cola);
 		}
-		System.out.println("Se han atendido a todos los clientes");
+		// e) Cuando la cola esté vacía, muestra un mensaje “No hay más clientes”
+		System.out.println("No hay más clientes");
 
 	}
 
