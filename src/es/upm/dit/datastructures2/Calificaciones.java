@@ -67,12 +67,12 @@ public class Calificaciones {
 					ArrayList<Double> notas = entry.getValue();
 					for (Double n : notas) {
 						suma += n;
+					}
 						double promedio = suma / notas.size();
 						if (mejorAlumno == null || promedio > mejorPromedio) {
 							mejorAlumno = entry.getKey();
 							mejorPromedio = promedio;
 						}
-					}
 				}
 				System.out.println("El alumno con mejor promedio es " + mejorAlumno + " con una nota de: " + mejorPromedio);
 				sc.nextLine();
