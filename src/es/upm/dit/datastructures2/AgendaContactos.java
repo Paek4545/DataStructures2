@@ -73,6 +73,7 @@ a) Crea un Map<String, String> donde la clave sea el nombre y el valor el númer
 				}
 		if(opciones.equals("0")) {
 					System.out.println("Saliendo...");
+					sc.close();
 				}
 				}
 			}	
